@@ -19,7 +19,7 @@ function App() {
 
     useEffect(() => {
         load().then(() => setLoading(false));
-    })
+    }, [])
 
     if (loading) return (
         <div>
